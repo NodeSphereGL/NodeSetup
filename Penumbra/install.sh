@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pcli_version="0.73.0"
-pd_version="0.73.0"
+pcli_version="0.75.0"
+pd_version="0.75.0"
 cometbft_version="0.37.5"
 
 read -r -p "Enter Node Name: " NODE_NAME

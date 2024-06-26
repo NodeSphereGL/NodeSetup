@@ -6,7 +6,7 @@ Open port:
 
 Install command:
 
-    wget -O install_autonity.sh https://raw.githubusercontent.com/toanbk/NodeInstaller/main/Autonity/install_node.sh && chmod +x install_autonity.sh && ./install_autonity.sh
+    wget -O install_autonity.sh https://raw.githubusercontent.com/NodeSphereGL/NodeSetup/main/Autonity/install_node.sh && chmod +x install_autonity.sh && ./install_autonity.sh
 
 # Setting Oracle server
 
@@ -33,7 +33,7 @@ After edit done, save file and restart oracle service
 
 Follow this link: https://docs.autonity.org/validators/register-vali/
 
-    cd $HOME && wget -O onboard_validator.sh https://raw.githubusercontent.com/toanbk/NodeInstaller/main/Autonity/onboard_validator.sh && chmod +x onboard_validator.sh && ./onboard_validator.sh
+    cd $HOME && wget -O onboard_validator.sh https://raw.githubusercontent.com/NodeSphereGL/NodeSetup/main/Autonity/onboard_validator.sh && chmod +x onboard_validator.sh && ./onboard_validator.sh
 
 # Check logs
 
@@ -43,4 +43,4 @@ Follow this link: https://docs.autonity.org/validators/register-vali/
 
 # Tool sign message when on board validator
 
-    cd $HOME && wget -O sign_onboard.sh https://raw.githubusercontent.com/toanbk/NodeInstaller/main/Autonity/sign/validator.sh && chmod +x sign_onboard.sh && ./sign_onboard.sh
+    cd $HOME && wget -O sign_onboard.sh https://raw.githubusercontent.com/NodeSphereGL/NodeSetup/main/Autonity/sign/validator.sh && chmod +x sign_onboard.sh && ./sign_onboard.sh

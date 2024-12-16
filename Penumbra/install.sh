@@ -1,7 +1,7 @@
 #!/bin/bash
 
-pcli_version="0.75.0"
-pd_version="0.75.0"
+pcli_version="0.77.0"
+pd_version="0.77.0"
 cometbft_version="0.37.5"
 
 read -r -p "Enter Node Name: " NODE_NAME
@@ -16,20 +16,14 @@ IP_ADDRESS=$(curl eth0.me)
 
 cd $HOME
 
-curl -sSfL -O https://github.com/penumbra-zone/penumbra/releases/download/v${pcli_version}/pcli-x86_64-unknown-linux-gnu.tar.xz
-unxz pcli-x86_64-unknown-linux-gnu.tar.xz
-tar -xf pcli-x86_64-unknown-linux-gnu.tar
-sudo mv pcli-x86_64-unknown-linux-gnu/pcli /usr/local/bin/
-sudo chmod +x /usr/local/bin/pcli
-
+curl --proto '=https' --tlsv1.2 -LsSf https://github.com/penumbra-zone/penumbra/releases/download/v${pcli_version}/pcli-installer.sh | sh
 # confirm the pcli binary is installed by running:
 pcli --version
 
-curl -sSfL -O https://github.com/penumbra-zone/penumbra/releases/download/v${pd_version}/pd-x86_64-unknown-linux-gnu.tar.xz
-unxz pd-x86_64-unknown-linux-gnu.tar.xz
-tar -xf pd-x86_64-unknown-linux-gnu.tar
+
+curl -sSfL -O https://github.com/penumbra-zone/penumbra/releases/download/v${pd_version}/pd-x86_64-unknown-linux-gnu.tar.gz
+tar -xf pd-x86_64-unknown-linux-gnu.tar.gz
 sudo mv pd-x86_64-unknown-linux-gnu/pd /usr/local/bin/
-sudo chmod +x /usr/local/bin/pd
 
 # confirm the pd binary is installed by running:
 pd --version

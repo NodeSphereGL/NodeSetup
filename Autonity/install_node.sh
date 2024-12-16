@@ -108,14 +108,6 @@ curl -o "$DATA_DIR/static-nodes.json" $STATIC_NODE_URL
 sleep 1
 echo -e "=============== Install Oracle ==================="
 
-cd  $HOME
-sudo wget https://github.com/autonity/autonity-oracle/releases/download/v$ORACLE_VERSION/autonity-oracle.tgz
-sudo tar -xzf autonity-oracle.tgz
-sudo rm -rf autonity-oracle.tgz
-
-cd autonity-oracle && sudo cp -r autoracle /usr/local/bin/autoracle && cd $HOME
-autoracle version
-
 cd $HOME
 sudo wget https://github.com/autonity/autonity-oracle/releases/download/v$ORACLE_VERSION/oracle-server.tgz
 sudo tar -xzf oracle-server.tgz

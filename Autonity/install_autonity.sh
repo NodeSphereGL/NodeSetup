@@ -1,6 +1,6 @@
 #!/bin/bash
 
-AUT_VERSION="0.14.0"
+AUT_VERSION="1.0.2-alpha"
 
 NETWORK_NAME="piccadilly"
 BINARY_NAME="autonityd"
@@ -45,7 +45,8 @@ if ! command -v expect &>/dev/null; then
     install_expect
 fi
 
-pipx install --force git+https://github.com/autonity/aut.git
+pipx uninstall aut
+pipx install autonity-cli
 pipx ensurepath
 
 if ! grep -qF 'export PATH="$PATH:/root/.local/bin"' ~/.bash_profile; then

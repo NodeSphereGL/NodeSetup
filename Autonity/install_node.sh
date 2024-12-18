@@ -1,7 +1,7 @@
 #!/bin/bash
 
 AUT_VERSION="1.0.2-alpha"
-ORACLE_VERSION="0.2.2"
+ORACLE_VERSION="0.2.3"
 
 NETWORK_NAME="piccadilly"
 BINARY_NAME="autonityd"

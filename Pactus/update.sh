@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Define version
-VERSION="1.6.4"
+VERSION="1.7.1"
 
 echo -e "\e[1m\e[32m2. Update Node --> \e[0m" && sleep 1
 
